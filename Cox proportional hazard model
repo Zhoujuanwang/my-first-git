@@ -50,3 +50,7 @@ sex_df
 fit <- survfit(res.cox, newdata = sex_df)
 ggsurvplot(fit, data = lung, conf.int = TRUE, legend.labs=c("Sex=1", "Sex=2"),
            ggtheme = theme_minimal())
+
+library(ggplot2)
+p <- ggplot(mtcars, aes(x=, y= , color=  ))
+p + geom_point()
